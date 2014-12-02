@@ -1,42 +1,53 @@
-body {
-	
-}
-h5 {
-	
-}
+<!DOCTYPE html >
+<html>
 
-#wrapper {
-	width: 600px;
-	height: 600px;
-	margin-right:auto;
-	margin-left:auto;
-	
-}
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script type="text/javascript" src="RSOsignup.js"></script>
+	<title>Project 2 Dorie + Marcus RSO Sign Up</title>
+</head>
 
-#leftSelect {
-	position: relative;
-	width: 150px;
-	height: 600px;
-	float: left;
-	
-}
+<body>
+<div id="wrapper">
 
-#listNames {
-	width:150;
-}
+<div id="leftSelect"> <select id="listNames" name="listname" size="45"> <option>test</option></select> 
+</div> <!-- close leftSelect div -->
 
-#right {
-	width: 450px;
-	position: relative;
-	float: left;
-}
+<div id="right">
+<div id="info"> 
+	<label for="inputname">Name:</label> <input name="inputname" type="text" size="45">
+	<br>
+	<label for="email">Email:</label> <input name="email" type="email" size="45">
+	<br>
+	<label for="phone">Phone:</label> <input name="phone" type="phone">	
+	<br>
+	<label for="gender">Gender:</label> 
+	<label for="male">male</label><input name="gender" type="radio" value="Male" id="male">	
+	<label for="female">female</label><input name="gender" type="radio" value="Female" id="female">
+	<br>
+	<label for="major">Major:</label> <select name="major" size="1">
+		<option>Information Systems Technologies</option>
+		<option>Electronic Systems Technologies</option>
+		<option>Technical Resource Management</option>
+	</select>
+	<br>
+	<button name="addPerson" onclick="addPerson()">Add Participant</button>	
+</div> <!-- close info div -->
 
-#info {
-	
-	position: relative;
-}
+<div id="summary"> 
+	<h5>Summary</h5>
+	<hr>
+	<table>
+		<tr><td>Information Systems Technologies: 0</td> <td>Male: 0</td></tr>
+		<tr><td>Electronic Systems Technologies: 0</td> <td>Female: 0</td></tr>
+		<tr><td>Technical Resource Management: 0</td> <td>&nbsp;</td></tr>
+		<tr><td>Other: 0</td> <td>&nbsp;</td></tr>
+	</table>
+</div> <!-- close summary div -->
+</div> <!-- close right div -->
 
-#summary {
-	
-	position: relative;
-}
+</div> <!-- close wrapper div -->
+
+</body>
+</html>
