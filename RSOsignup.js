@@ -10,6 +10,18 @@ function checkMajor() {
 }
 
 function addParticipant() {
+	
+	var newContact = document.getElementById("inputname").value;
+	var newEmail = document.getElementById("email").value;
+	var newPhone = document.getElementById("phone").value;
+	var newMale = document.getElementById("male").value;
+	var newFemale = document.getElementById("female").value;
+	var newMajor = document.getElementById("major").value;
+	
+	participants.push([newContact, newEmail,newPhone,newMale,newFemale,newMajor]);
+	document.write(participants);
+	
+
 	//check fields, if empty, alert()
 	
 }
