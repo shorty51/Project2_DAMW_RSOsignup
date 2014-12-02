@@ -1,4 +1,7 @@
-var x = "";
+var participants = new Array();
+//var index = participants.length;
+
+
 var item = document.getElementById("listNames").selectedIndex;
 //document.getElementById("listNames").innerHTML = code;
 //document.getElementById("name").value = "something";
@@ -6,6 +9,7 @@ var item = document.getElementById("listNames").selectedIndex;
 
 function checkMajor() {
 	//if major=="other" then Inform your Major:
+	//update summary?
 	
 }
 
@@ -21,9 +25,16 @@ function addParticipant() {
 	participants.push([newContact, newEmail,newPhone,newMale,newFemale,newMajor]);
 	document.write(participants);
 	
-
-	//check fields, if empty, alert()
 	
+	//check fields, if empty, alert()
+	// create a column Name to position 0 of the array participants
+	//participants[index]["Name"] = document.getElementById("inputName").value;
+	// create a column Email to position 0 of the array participants
+	//participants[index]["Email"] = document.getElementById("email").value;
+	// create a column Phone to position 0 of the array participants
+	//participants[index]["Phone"] = document.getElementById("phone").value;
+	// create a column Major to position 0 of the array participants
+	//participants[index]["Major"] = document.getElementById("major").value;
 }
 
 function sortArray() {
@@ -78,4 +89,3 @@ function cancelForm() {
 	//cancels the update???? calls function reset, hides buttons
 	
 }
-
