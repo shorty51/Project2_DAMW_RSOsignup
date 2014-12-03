@@ -16,23 +16,29 @@
 
 <div id="right">
 <div id="info"> 
-	<label for="inputname">Name:</label> <input name="inputname" type="text" size="45">
+<form>
+	<label for="inputname">Name:</label> <input name="inputname" id="inputname" type="text" size="45">
 	<br>
-	<label for="email">Email:</label> <input name="email" type="email" size="45">
+	<label for="email">Email:</label> <input name="email" id="email" type="email" size="45">
 	<br>
-	<label for="phone">Phone:</label> <input name="phone" type="tel">	
+	<label for="phone">Phone:</label> <input name="phone" id="phone" type="tel">	
 	<br>
 	<label for="gender">Gender:</label> 
 	<label for="male">male</label><input name="gender" type="radio" value="Male" id="male">	
 	<label for="female">female</label><input name="gender" type="radio" value="Female" id="female">
 	<br>
-	<label for="major">Major:</label> <select name="major" size="1">
+	<label for="major">Major:</label> <select name="major" id="major" size="1" onchange="checkMajor();">
 		<option>Information Systems Technologies</option>
 		<option>Electronic Systems Technologies</option>
 		<option>Technical Resource Management</option>
+		<option>Other</option>
 	</select>
 	<br>
+	<br>
+	<div id="otherMajor"> </div>
+	 
 	<button name="addParticipant" onclick="addParticipant()">Add Participant</button>	
+</form>
 </div> <!-- close info div -->
 
 <div id="summary"> 
@@ -51,4 +57,3 @@
 
 </body>
 </html>
-
