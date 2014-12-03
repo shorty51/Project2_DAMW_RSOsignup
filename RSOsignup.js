@@ -2,15 +2,23 @@ var participants = new Array();
 //var index = participants.length;
 
 
-var item = document.getElementById("listNames").selectedIndex;
+//var item = document.getElementById("listNames").selectedIndex;
 //document.getElementById("listNames").innerHTML = code;
 //document.getElementById("name").value = "something";
 //var name = document.getElementById("name").value;
 
 function checkMajor() {
-	//if major=="other" then Inform your Major:
-	//update summary?
+	alert("test");
+	if (document.getElementById("major").value == "Other") {
+		document.getElementById("otherMajor").innerHTML = 
+		'<label for="informMajor">Inform your Major:</label><input id="informMajor" type="text">';
+	} //then Inform your Major:
+	else {
+		document.getElementById("otherMajor").innerHTML = "";
+	}
 	
+	
+	//updateSummary()
 }
 
 function addParticipant() {
